@@ -3,22 +3,22 @@
 <head>
 
 	<title>
-Home
+Dukkana
 </title>
 	<link rel="stylesheet" type="text/css" href= "./css/main.css">
 	
 	<!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Home</title>
+<title>Dukkana</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Home" />
+<meta property="og:title" content="Dukkana" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
+<link rel="canonical" href="http://localhost:4000/dukkana" />
+<meta property="og:url" content="http://localhost:4000/dukkana" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Home" />
+<meta property="twitter:title" content="Dukkana" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"Home","url":"http://localhost:4000/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","headline":"Dukkana","url":"http://localhost:4000/dukkana"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -48,9 +48,27 @@ Home
 </header>
 
 
-  <body>
-    TESTS
-    </body>
+<h1>
+Continents of Varra
+</h1>
+<br>
+The Land of Varra consists of two continents, which several millenia ago existed as one. There is as well a group of large closely connected islands often considered a "third continent."
+<br>
+<ul>
+
+<li>
+Navarra, Land of Prosperity
+</li>
+
+<li>
+Suvarra, The Wild Frontier
+</li>
+
+<li>
+Ravarra, The Lost Isles
+</li>
+
+</ul>
 
 
 

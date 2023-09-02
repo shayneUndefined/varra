@@ -1,0 +1,28 @@
+<header>
+	<style>
+		header > nav > ul > li:first-of-type a {
+			color: rgba(0,0,0,0); }
+		header > nav > ul > li:first-of-type a:hover {
+			color: purple; }
+		nav a:hover, a.nav-link:hover {
+			text-decoration: underline !important;
+			text-decoration-thickness: .1em }
+
+	</style>
+
+	<nav>
+		<div>
+			<a href="./index.html">
+				shayne.Undefined</a>
+		</div>
+		<ul>
+			{% for link in site.data.links %}
+			<li>
+				<a class="nav-link" href="{{ link.url }}">
+					{{ link.label }}
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</nav>
+</header>

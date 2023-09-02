@@ -1,0 +1,31 @@
+{% assign thisPage = site.data.continents %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ page.title }}</title>
+	<link rel="stylesheet" type="text/css" href= "./css/main.css">
+	{% feed_meta %}
+	{% seo %}
+
+	<style></style>
+</head>
+	{% include header.html %}
+
+	{{ thisPage.header1 }}
+<BR>
+{{ thisPage.description }}
+<BR>
+<uL>
+{% for continent in thisPage.continents %}
+<li>{{ continent }}</li>
+{% endfor%}
+</uL>
+
+<BR>
+	{{ content }}
+	
+
+	{% include footer.html %}
+
+</html>

@@ -1,0 +1,12 @@
+---
+title: continents
+header1: SOME SHIT
+description: The Land of Varra consists of two continents, which several millenia ago 
+    existed as one. There is as well a group of large closely connected islands often
+    considered a "third continent."
+
+
+continents:
+  - Navarra, Land of Prosperity
+  - Suvarra, The Wild Frontier
+  - Ravarra, The Lost Isles

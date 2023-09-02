@@ -1,0 +1,323 @@
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
+<style>
+  h5 {
+    padding: 0 1em;
+  }
+  .countholder {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 300;
+    text-align: center;
+    font-size: 48px;
+    background-color: #333;
+    margin:0;
+    padding-bottom: 1em;
+    line-height: 1.4;
+    width: 100%}
+  .countholder .link {
+    margin:0;
+    padding: 0px;
+  }
+  .countholder a {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    margin:0;
+    padding: 0px;
+    background: #265;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  .countholder a:hover {
+    background: #487;
+  }
+  .countholder > div {
+    margin:0;
+    width: 2em;
+    height: 2em;
+    padding: 0.3em;
+    border-radius: 3px;
+    background: #cc3300;
+    display: inline-block;
+  }
+  .countholder div > span {
+    border-radius: 3px;
+    background: #cc3300;
+    display: inline-block;
+  }
+  .countholder .smalltext {
+    margin:0;
+    padding: 0px;
+    font-size: 16px;
+  }
+
+@media (max-width: 700px){
+  h5 {
+    font-size: 30px;
+    line-height: 38px;
+    padding: 0 1.5em;
+    margin-bottom: 1em;
+  }
+  .countholder {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+  .countholder > div {
+    width: auto;
+    height: auto;
+    padding: 0.4em;
+  }
+  .countholder .smalltext {
+    font-size: 14px;
+  }
+}
+</style>
+
+<body onload="getSeconds()">
+<div class="countholder">
+  <h5 id = "comingEvent">PLACEHOLDER</h5>
+  <div><span class="days" id="haunt1Days"></span><div class="smalltext">Days</div></div>
+  <div><span class="hours" id="haunt1Hours"></span><div class="smalltext">Hours</div></div>
+  <div><span class="minutes" id="haunt1Minutes"></span><div class="smalltext">Minutes</div></div>
+  <div><span class="seconds" id="haunt1Seconds"></span><div class="smalltext">Seconds</div></div>
+</div>
+</body>
+
+<script>
+var curday;
+var secTime;
+var ticker;
+let event;
+let loc;
+let placeholder;
+let tD;
+let tH;
+let tM;
+let nowday;
+
+
+function getSeconds( ) {
+
+  var nowDate = new Date(); //curent date
+  var curtime = nowDate.getTime(); //current time 0-23
+  let nowday = nowDate.getDay(); //get current day 0-6
+  let nowHour = nowDate.getHours();
+  let HauntedCarriage = "The Haunted Carriage of Ashwold Cemetery appears in";
+  let DemonGates = "Demon Gates appear in Realm of Damnation in"
+  let AncientArena = "Bilefen's Ancient Arena starts in"
+  let AncientNightmare = "Ancient Nightmare emerges atop Mount Zavain in"
+
+//if nowday is sunday
+  if (nowday = 0) { 
+    if ( nowHour > 0 && nowHour <= 12){
+      placeholder = DemonGates;
+      tD=0; tH=12; tM=0;
+    }
+    else if ( nowHour > 12 && nowHour <= 20.5){
+      placeholder = DemonGates;
+      tD=0; tH=20; tM=30;
+    }
+    else if ( nowHour > 20.5 && nowHour <= 21.5){
+      placeholder = AncientArena;
+      tD=0; tH=21; tM=30;
+    }
+    else if ( nowHour > 21.5 && nowHour <= 24){
+      placeholder = DemonGates;
+      tD=1; tH=12; tM=0;
+    }
+    else {
+      alert("error")
+    }
+  }  
+//if nowday is monday
+  if (nowday = 1) {
+    if ( nowHour > 0 && nowHour <= 12){
+      placeholder = DemonGates;
+      tD=1; tH=12; tM=0;
+    }
+    else if ( nowHour > 12 && nowHour <= 20.5){
+      placeholder = DemonGates;
+      tD=1; tH=20; tM=30;
+    }
+    else if ( nowHour > 20.5 && nowHour <= 22){
+      placeholder = DemonGates;
+      tD=1; tH=22; tM=0;
+    }
+    else if ( nowHour > 22 && nowHour <= 24){
+      placeholder = HauntedCarriage;
+      tD=2; tH=12; tM=0;
+    }
+    else {
+      alert("error")
+    }
+  }  
+//if nowday is tuesday
+  if (nowday = 2) {
+    if ( nowHour > 0 && nowHour <= 12){
+      placeholder = HauntedCarriage;
+      tD=2; tH=12; tM=0;
+    }
+    else if ( nowHour > 12 && nowHour <= 20.5){
+      placeholder = HauntedCarriage;
+      tD=2; tH=20; tM=30;
+    }
+    else if ( nowHour > 20.5 && nowHour <= 21.5){
+      placeholder = AncientArena;
+      tD=2; tH=21; tM=30;
+    }
+    else if ( nowHour > 21.5 && nowHour <= 22){
+      placeholder = HauntedCarriage;
+      tD=2; tH=22; tM=0;
+    }
+    else if ( nowHour > 22 && nowHour <= 24){
+      placeholder = AncientNightmare;
+      tD=3; tH=12; tM=0;
+    }
+    else {
+      alert("error")
+    }
+}
+//if nowday is wednesday
+  if (nowday = 3) {
+    if ( nowHour > 0 && nowHour <= 12){
+      placeholder = AncientNightmare;
+      tD=3; tH=12; tM=0;
+    }
+    else if ( nowHour > 12 && nowHour <= 20.5){
+      placeholder = AncientNightmare;
+      tD=3; tH=20; tM=30;
+    }
+    else if ( nowHour > 20.5 && nowHour <= 22){
+      placeholder = AncientNightmare;
+      tD=3; tH=22; tM=0;
+    }
+    else if ( nowHour > 22 && nowHour <= 24){
+      placeholder = DemonGates;
+      tD=4; tH=12; tM=0;
+    }
+    else {
+      alert("error")
+    }
+  }  
+
+//if nowday is thursday
+  if (nowday = 4) {
+     if ( nowHour > 0 && nowHour <= 12){
+      placeholder = DemonGates;
+      tD=4; tH=12; tM=0;
+    }
+    else if ( nowHour > 12 && nowHour <= 20.5){
+      placeholder = DemonGates;
+      tD=4; tH=20; tM=30;
+    }
+    else if ( nowHour > 20.5 && nowHour <= 21.5){
+      placeholder = AncientArena;
+      tD=4; tH=21; tM=30;
+    }
+    else if ( nowHour > 21.5 && nowHour <= 22){
+      placeholder = DemonGates;
+      tD=4; tH=22; tM=0;
+    }
+    else if ( nowHour > 22 && nowHour <= 24){
+      placeholder = AncientNightmare;
+      tD=5; tH=12; tM=0;
+    }
+    else {
+      alert("error")
+    }
+  }  
+//if nowday is friday
+  if (nowday = 5) {
+     if ( nowHour > 0 && nowHour <= 12){
+      placeholder = AncientNightmare;
+      tD=5; tH=12; tM=0;
+    }
+    else if ( nowHour > 12 && nowHour <= 20.5){
+      placeholder = AncientNightmare;
+      tD=5; tH=20; tM=30;
+    }
+    else if ( nowHour > 20.5 && nowHour <= 22){
+      placeholder = AncientNightmare;
+      tD=5; tH=22; tM=0;
+    }
+    else if ( nowHour > 22 && nowHour <= 24){
+      placeholder = HauntedCarriage;
+      tD=6; tH=12; tM=0;
+    }
+    else {
+      alert("error")
+    }
+  }  
+//if nowday is saturday
+  if (nowday = 6) {
+    if ( nowHour > 0 && nowHour <= 12){
+      placeholder = HauntedCarriage;
+      tD=6; tH=12; tM=0;
+    }
+    else if ( nowHour > 12 && nowHour <= 20.5){
+      placeholder = HauntedCarriage;
+      tD=6; tH=20; tM=30;
+    }
+    else if ( nowHour > 20.5 && nowHour <= 21.5){
+      placeholder = AncientArena;
+      tD=6; tH=21; tM=30;
+    }
+    else if ( nowHour > 21.5 && nowHour <= 22){
+      placeholder = HauntedCarriage;
+      tD=6; tH=22; tM=0;
+    }
+    else if ( nowHour > 22 && nowHour <= 24){
+      placeholder = DemonGates;
+      tD=0; tH=12; tM=0;
+    }
+    else {
+      alert("error")
+    }
+  }  
+
+  var countertime = new Date(nowDate.getFullYear(),nowDate.getMonth(),nowDate.getDate(),tH,tM,0); //20 out of 24 hours = 8pm
+  var atime = countertime.getTime(); //countdown time
+  var diff = parseInt((atime - curtime)/1000);
+  if (diff >= 0) { curday = tD - nowday }
+  else { curday = tD - nowday -1 } //after countdown time
+  if (curday < 0) { curday += 7; } //already after countdown time, switch to next week
+  if (diff < 0) { diff += (86400 * 7) }
+    startTimer (diff);
+}
+
+function startTimer(secs) {
+  secTime = parseInt(secs);
+  ticker = setInterval("tick()",1000);
+  tick(); //initial count display
+}
+ 
+function tick() {
+  var secs = secTime;
+  if (secs>0) {
+    secTime--;
+  }
+  else {
+    clearInterval(ticker);
+    getSeconds(); //start over
+  }
+  var days = Math.floor(secs/86400);
+    secs %= 86400;
+  var hours= Math.floor(secs/3600);
+    secs %= 3600;
+  var mins = Math.floor(secs/60);
+    secs %= 60;
+
+  //update the time display
+  let thisdate = new Date();
+  thisday = thisdate.getDay();
+  daysLeft = tD - thisday;  
+  if (daysLeft = 0){ daysLeft += 7 }
+  document.getElementById("comingEvent").innerHTML = placeholder;
+  document.getElementById("haunt1Days").innerHTML = daysLeft;
+  document.getElementById("haunt1Hours").innerHTML = ((hours < 10 ) ? "0" : "" ) + hours;
+  document.getElementById("haunt1Minutes").innerHTML = (( mins < 10) ? "0" : "" ) + mins;
+  document.getElementById("haunt1Seconds").innerHTML = (( secs < 10) ? "0" : "" ) + secs;
+//  alert(daysLeft);
+}
+</script>

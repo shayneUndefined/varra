@@ -1,2 +1,37 @@
 ---
+version: 1
+author: Shayne Valencia
+title: Dukkana
+
 header1: Dukkana Folk
+size: Small or Medium
+walking-speed: 25ft
+swimming-speed: 50ft (2x walking)
+
+notable-quote: Quack, quack.<br> - Dukkanese proverb
+
+description: >
+  These small beings may look adorable and can seem quite wholesome, 
+  but it is important to always remember that many have short tempers and are just
+  as often fierce fighters than not.
+
+early-life: >
+  IDK man like quack
+
+beliefs: >
+  test
+
+origins: >
+  test
+
+trait1: >
+  shit
+
+language: >
+  While almost all dukkana alive today speak the Common tongue, 
+  Dukkanese is still taught as their first language within most dukkana 
+  families. Dukkanese is at once both immensely simple and incredibly complex.
+  It contains simply one sound: "quack." It is the way the "quack" is spoken (tone, speed,
+  pitch, timbre, etc) along with a myriad of other visual and aural cues (tongue clicks, facial expressions, handwaving,
+  so on and so on) that determines the meaning. It is in this way that the dukkanese language is able 
+  to express a myriad of complex concepts with simply one basic sound.

@@ -1,0 +1,49 @@
+---
+layout: default
+title: Dukkana
+page: dukkana
+
+---
+
+{% assign data = site.data.dukkana %}
+
+<body>
+  <div class="section">
+  <h1>
+    {{ data.header1 }}
+  </h1>
+  <table>
+    <tr>
+      <th>Version<br>&nbsp;</th>
+      <td>{{ data.version }}</td>
+    </tr>
+    <tr>
+      <th>Size<br>&nbsp;</th>
+      <td>{{ data.size }}</td>
+    </tr>
+    <tr>
+      <th>Walking<br>Speed</th>
+      <td>{{ data.walking-speed }}</td>
+    </tr>
+    <tr>
+      <th>Swimming<br>Speed</th>
+      <td>{{ data.swimming-speed }}</td>
+    </tr>
+  </table>
+  <br> 
+  <div>
+  {{ data.notable-quote }}
+</div>
+
+
+  <br>
+  {{ data.description }}
+  <br>
+  {{ data.early-life }}
+
+  <p>
+    
+    {{data.language}}
+  </p>
+  </div>
+</body>

@@ -4,34 +4,88 @@ author: Shayne Valencia
 title: Dukkana
 
 header1: Dukkana Folk
-size: Small or Medium
+size: Small, Medium
 walking-speed: 25ft
 swimming-speed: 50ft (2x walking)
 
 notable-quote: Quack, quack.<br> - Dukkanese proverb
 
 description: >
-  These small beings may look adorable and can seem quite wholesome, 
+  <p>These small beings may look adorable and can seem quite wholesome, 
   but it is important to always remember that many have short tempers and are just
-  as often fierce fighters than not.
+  as often fierce fighters than not.</p>
 
 early-life: >
-  IDK man like quack
+  <h3>Early Life</h3>
+  <p>A dukkan hatches from a large, often speckled egg and spends the first few weeks of its life attempting to waddle and continually falling over in a comical yet adorable manner. 
+  Its parents will do their best to raise their offspring, often in a large gaggle of children. The small fowl family will wander about the land, from body of water to body of water, 
+  leaving a trail of half eaten fish corpses in their wake. They keep watchful eyes on their children, and as they typically become quite paranoid and protective of their children, 
+  they begin training their young for combat at quite an early age. By the time a dukkan reaches sexual maturity, it has already acquired a number of survival skills.</p>
+  <p>At some point, dukkana feel a natural urge to explore the world and become their own person. It is at this point that they leave their (likely large) family and usually never return.</p>
 
 beliefs: >
-  test
+  <h3>Beliefs</h3>
+  <p>Dukkans are non-communal family-oriented beings; for this reason, there are few organized or structured religious and spiritual beliefs among the dukkan people. Instead, they rather elevate their 
+  familial ancestors to a deified status. One will often hear a dukkan tell talltales of their incredibly courageous grandparents or their incredibly powerful ancient ancestors.
+  </p>
 
 origins: >
-  test
-
-trait1: >
-  shit
+  <h3>Origins</h3>
+  <p>A dukkan hatches from a large, often speckled egg and spends the first few weeks of its life attempting to waddle and continually falling over in a comical yet adorable manner. Its parents will do their best to raise their offspring, often in a large gaggle of children. The small fowl family will wander about the land, from body of water to body of water, leaving a trail of half eaten fish corpses in their wake. They keep watchful eyes on their children, and as they typically become quite paranoid and protective of their children, they begin training their young for combat at quite an early age. By the time a dukkan reaches sexual maturity, it has already acquired a number of survival skills.</p><p>At some point, dukkana feel a natural urge to explore the world and become their own person. It is at this point that they leave their (likely large) family and usually never return.</p>
 
 language: >
-  While almost all dukkana alive today speak the Common tongue, 
+  <p>While almost all dukkana alive today speak the Common tongue, 
   Dukkanese is still taught as their first language within most dukkana 
   families. Dukkanese is at once both immensely simple and incredibly complex.
   It contains simply one sound: "quack." It is the way the "quack" is spoken (tone, speed,
   pitch, timbre, etc) along with a myriad of other visual and aural cues (tongue clicks, facial expressions, handwaving,
   so on and so on) that determines the meaning. It is in this way that the dukkanese language is able 
-  to express a myriad of complex concepts with simply one basic sound.
+  to express a myriad of complex concepts with simply one basic sound.</p>
+
+names: >
+  <p>It is very easy to tell if a dukkan comes from a proud family lineage or if they are one of the more
+  rare independent wanderers, for in traditional dukkan culture it is the family name which comes
+  first. Presenting one's own personal name first is a massive taboo within traditional dukkan
+  culture, but has become increasingly common in recent years as the very nature of dukkan social customs
+  means there is no real consequence to doing so, as it is rare for unrelated dukkans to run into each other.</p>
+  <p>It is also incredibly difficult
+  </p>
+
+trait1: >
+  <p>Ability Score Increase. Your Agility Score increases by 2 and your Wisdom Score increases by 1.</p>
+
+agility-score-increase: >
+  <p>Your Agility score increases by 2, and your Wisdom score increases by 1.</p>
+
+age: >
+  <p>Age. Young dukkana crawl for a few weeks after birth before learning to walk on two legs. They reach adulthood by the age of 18 and live an average of 80 years.
+  </p>
+
+alignment: >
+  Dukkana are agents of chaos. Being non-communal beings, they are selfish in almost all matters that do not involve their own family. Adventuring with a lone dukkan typically means trying to get along with a being wholly devoted to its own entertainment and survival. As they have few communal, religious or spiritual beliefs, most dukkana are chaotic neutral.
+
+size-detailed: >
+  Dukkans vary wildly in size and plumage. Adults can stand 3 to 5 feet tall and average 30 to 60 pounds. They can have plumage of nearly any color or pattern, and can be affected or changed with diet. Most common are green, black, brown, and white. Your size is Small or Medium.
+
+walking-speed-long: >
+  Your base walking speed is 25 feet.
+
+melee-weaponry: >
+  Dukkana have talons on both their hands and feet, which act as natural weapons and can be used to make unarmed strikes. If you hit with them, you deal slashing damage (Talon Slash) or piercing damage (Talon Stab) equal to 1d4 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.
+
+hold-breath: >
+  You can hold your breath for up to 1 hour at a time. Dukkana are natural swimmers and can remain underwater for some time before needing to come up for air.
+
+swimming: >
+  Dukkana are natural swimmers and so their Swim Speed is always **at least double** their Walking Speed. Higher levels might grant even faster speeds.
+  As a dukkan, your feathers have an oily coating to them thanks to an oily substance your body naturally secretes. This oil is odorless and colorless, but waterproofs your plumage (increasing your Swim Speed). Your oily coating also makes you more agile and harder to hit, increasing your total AC Score by 2.
+
+fun-fact1: >
+  Dohmnall Dukkan It. 
+  Many dukkans do not enjoy wearing pants, but thanks to their agility and their body shape, they enjoy the benefits of a full set of armor even if they choose to forgo pantaloons.
+
+ability: >
+  You gain proficiency in the **[Survival](https://www.dndbeyond.com/compendium/rules/basic-rules/using-ability-scores#Survival)** skill. Dukkana have finely honed survival instincts.
+
+known-languages: >
+  You can speak, read, and write Dukkanese and Common.

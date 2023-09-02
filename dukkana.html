@@ -8,11 +8,11 @@ page: dukkana
 {% assign data = site.data.dukkana %}
 
 <body>
-  <div class="section">
+   <div class="section">
   <h1>
     {{ data.header1 }}
   </h1>
-  <table>
+  <table class="folk">
     <tr>
       <th>Version<br>&nbsp;</th>
       <td>{{ data.version }}</td>
@@ -30,20 +30,25 @@ page: dukkana
       <td>{{ data.swimming-speed }}</td>
     </tr>
   </table>
-  <br> 
-  <div>
-  {{ data.notable-quote }}
-</div>
+ 
+    <div>
+      {{ data.notable-quote }}
+    </div>
+    <br>
+    {{ data.description }}
+    <br>
+    {{ data.early-life }}
+    {{ data.beliefs }}
+    {{ data.origins }}
+    <p>
+      {{data.language}}
+    </p>
+    {{ data.names }}
+    {{ data.trait1 }}
+    {{ data.trait2 }}
+    {{ agility-score-increase }}
+    TEST
+    {{ data.age }}
 
-
-  <br>
-  {{ data.description }}
-  <br>
-  {{ data.early-life }}
-
-  <p>
-    
-    {{data.language}}
-  </p>
   </div>
 </body>

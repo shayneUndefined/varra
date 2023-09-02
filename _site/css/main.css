@@ -6,7 +6,8 @@ body {
 	font-family: 'Space Grotesk', sans-serif;
 }
 div.section {
-	width: 75% !important;
+	width: 80% !important;
+	margin: auto 10%;
 }
 a {
 	color: white;
@@ -16,4 +17,14 @@ th {
 }
 td {
 
+}
+
+table.folk {
+	width: auto;
+	margin-right:10%;
+	margin-left: auto;
+}
+
+h3 {
+	margin: 1.5em auto .5em auto;
 }

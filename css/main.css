@@ -3,6 +3,7 @@
 
 body {
 	background-color: #303030; color: #fff;
+	  text-align: center;
 	font-family: 'Space Grotesk', sans-serif;
 }
 div.section {
@@ -27,4 +28,20 @@ table.folk {
 
 h3 {
 	margin: 1.5em auto .5em auto;
+}
+
+
+
+#dice-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dice {
+  margin: 10px;
+  padding: 10px;
+  border: 2px solid #333;
+  display: inline-block;
+  cursor: pointer;
 }

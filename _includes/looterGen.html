@@ -1,0 +1,117 @@
+{% assign lootCR1 = site.data.looterGen.CR1 | split: ", " %}
+{% assign lootCR2 = site.data.looterGen.CR2 | split: ", " %}
+{% assign lootCR3 = site.data.looterGen.CR3 | split: ", " %}
+{% assign lootCR4 = site.data.looterGen.CR4 | split: ", " %}
+{% assign lootCR5 = site.data.looterGen.CR5 | split: ", " %}
+{% assign lootCR6 = site.data.looterGen.CR6 | split: ", " %}
+{% assign lootCR7 = site.data.looterGen.CR7 | split: ", " %}
+{% assign lootCR8 = site.data.looterGen.CR8 | split: ", " %}
+{% assign lootCR9 = site.data.looterGen.CR9 | split: ", " %}
+{% assign lootCR10 = site.data.looterGen.CR10 | split: ", " %}
+
+    <h1>D&D 5E Loot Generator</h1>
+    <div class="cr-selector">
+        <h2>Select Challenge Rating (CR):</h2>
+        <button class="cr-button" data-cr="1">CR 1</button>
+        <button class="cr-button" data-cr="2">CR 2</button>
+        <button class="cr-button" data-cr="3">CR 3</button>
+        <button class="cr-button" data-cr="4">CR 4</button>
+        <button class="cr-button" data-cr="5">CR 5</button>
+        <button class="cr-button" data-cr="6">CR 6</button>
+        <button class="cr-button" data-cr="7">CR 7</button>
+        <button class="cr-button" data-cr="8">CR 8</button>
+        <button class="cr-button" data-cr="9">CR 9</button>
+        <button class="cr-button" data-cr="10">CR 10</button>
+        <!-- Add more buttons for higher CR values as needed -->
+    </div>
+    <div class="loot-results">
+        <h2>Loot:</h2>
+        <p id="loot-result">Click a CR to generate loot.</p>
+    </div>
+    <script>        
+const lootByCR = {
+    1: [
+          {% for loot in lootCR1 %}
+            ["{{ loot }}"],
+          {% endfor %}
+          // loot options for CR1
+    ],
+    2: [
+          {% for loot in lootCR2 %}
+            ["{{ loot }}"],
+          {% endfor %}
+          // loot options for CR2
+      ],
+    3: [
+          {% for loot in lootCR3 %}
+            ["{{ loot }}"],
+          {% endfor %}
+          // loot options for CR3
+      ],
+    4: [
+          {% for loot in lootCR4 %}
+            ["{{ loot }}"],
+          {% endfor %}
+          // loot options for CR4
+      ],
+    5: [
+          {% for loot in lootCR5 %}
+            ["{{ loot }}"],
+          {% endfor %}
+          // loot options for CR5
+      ],
+    6: [
+          {% for loot in lootCR6 %}
+            ["{{ loot }}"],
+          {% endfor %}
+          // loot options for CR6 
+      ],
+    7: [
+          {% for loot in lootCR7 %}
+            ["{{ loot }}"],
+          {% endfor %}
+         // loot options for CR7
+      ],
+    8: [
+          {% for loot in lootCR8 %}
+            ["{{ loot }}"],
+          {% endfor %}
+          // loot options for CR8
+      ],
+    9: [
+          {% for loot in lootCR9 %}
+            ["{{ loot }}"],
+          {% endfor %}
+          // loot options for CR9
+      ],
+    10: [
+          {% for loot in lootCR10 %}
+            ["{{ loot }}"],
+          {% endfor %}
+          // loot options for CR 10
+      ],
+    // Add more loot for higher CR values as needed
+};
+function getRandomItem(lootArray) {
+    return lootArray[Math.floor(Math.random() * lootArray.length)];
+}
+
+const crButtons = document.querySelectorAll(".cr-button");
+const lootResult = document.getElementById("loot-result");
+
+crButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const selectedCR = button.getAttribute("data-cr");
+        const lootList = lootByCR[selectedCR] || ["No loot for this CR."];
+        const numberOfItems = Math.floor(Math.random() * 3) + 1; // Random number between 1 and 3
+        const lootText = [];
+
+        for (let i = 0; i < numberOfItems; i++) {
+            lootText.push(getRandomItem(lootList));
+        }
+
+        lootResult.textContent = `Loot for CR ${selectedCR}: ${lootText.join(", ")}`;
+    });
+});
+
+    </script>

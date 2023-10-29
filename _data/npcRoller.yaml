@@ -1,15 +1,17 @@
 ---
 
-speciesOptions: human, tortle, elf, grung, tiefling, halfling, orc, dragonborn, hamastran, aarokocra
+speciesOptions: dwarf, halfling, gnome, half-elf, half-orc, aasimar, firbolg, genasi, goliath, kenku, lizardfolk, tabaxi, triton, bugbear, goblin, hobgoblin, kobold, yuan-ti, changeling, shifter, warforged, centaur, minotaur, loxodon, lyncanthrope, ghost, mousekin, human, tortle, elf, grung, tiefling, halfling, orc, dragonborn, hamastran, aarokocra
 
 genderOptions: male, female, nonbinary, trans mtf, trans ftm, other
 
 clashOptions: barbarian, bard, cleric, druid, fighter, monk, paladin, ranger, rogue, sorcerer, warlock, wizard
 
+jobOptions: Candlemaker, Astrologer, Cartographer, Grave Digger, Perfumer, Locksmith, Animal Trainer, Street Magician, Beekeeper, Ship Captain, Glassblower, Librarian, Tax Collector, Street Sweeper, Royal Gardener, Town Crier, Fortune Teller, Barrel Maker, Gemcutter, Potion Vendor
+
 sizeOptions: average, tall, small
 
-backgroundOptions: poor, religious, fraud, criminal, rich, noble, entertainer, folk hero, artisan, hermit, outcast, sage, sailor, soldier, urchin, loving family, broken family, abusive family, pariah, zealout
+backgroundOptions: Trader, Alchemist, Nomad, Healer, Bandit, Storyteller, Shipwright, Herbalist, Gambler, Diplomat, Historian, Jester, Art Collector, Fisherman, Blacksmith, Grave Digger, Minstrel, Bounty Hunter, Tavernkeeper, Apothecary, Farmer, Street Performer, Zookeeper, Shadow Dancer, Falconer, Innkeeper, Explorer, Pirate, Archaeologist, Cartographer, poor, religious, fraud, criminal, rich, noble, entertainer, folk hero, artisan, hermit, outcast, sage, sailor, soldier, urchin, loving family, broken family, abusive family, pariah, zealout
 
-motivationOptions: happiness, money, freedom, peace, joy, balance, fulfillment, confidence, stability, passion
+motivationOptions: Justice, Wisdom, Legacy, Exploration, Curiosity, Compassion, Leadership, Fulfillment, Challenge, Growth, Serenity, Thrill, Community, Acceptance, Artistic Expression, Innovation, Altruism, Perseverance, Harmony, Spiritual Enlightenment, Competition, Relaxation, Aliveness, Wisdom, Family, Environment, Romance, Faith, Redemption, Self-Discovery, Balance, happiness, money, freedom, peace, joy, balance, fulfillment, confidence, stability, passion
 
-flawOptions: judgmental, obsessive, selfish, envious, overly lustful, gluttonous, debt, greedy, cowardly, paranoid, covetous, pessimistic, optimistic, cynical, irrational, ignorant, foolish, naive, hedonistic, practical
+flawOptions: Judgmental, Obsessive, Selfish, Impulsive, Pessimistic, Arrogant, Stubborn, Insecure, Procrastinator, Naive, Manipulative, Moody, Jealous, Passive-aggressive, Cynical, Cowardly, Materialistic, Greedy, Indecisive, Defensive, Reckless, Perfectionist, Condescending, Gullible, Disorganized, Vain, Closed-minded, Unreliable, Dependent, Forgetful, Short-tempered, Unemotional, Lazy, Dishonest, Rigid, Irresponsible, Inattentive, Self-doubting, Overcritical, Sarcastic, judgmental, obsessive, selfish, envious, overly lustful, gluttonous, debt, greedy, cowardly, paranoid, covetous, pessimistic, optimistic, cynical, irrational, ignorant, foolish, naive, hedonistic, practical

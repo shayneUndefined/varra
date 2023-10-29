@@ -12,7 +12,7 @@ page: home
 <body>
 
 <section>
-  <h1>Random Dice Roller</h1>
+  <h1>Dice Roller with History</h1>
   <div id="dice-container">
     <div class="dice" id="d4">d4: 0</div>
     <div class="dice" id="d6">d6: 0</div>
@@ -20,6 +20,13 @@ page: home
     <div class="dice" id="d10">d10: 0</div>
     <div class="dice" id="d12">d12: 0</div>
     <div class="dice" id="d20">d20: 0</div>
+    <div class="dice" id="d100">d100: 0</div>
+  </div>
+  <button id="clear-button">Clear History and Total</button>
+  <div id="history">
+    <h2>History:</h2>
+    <ul id="history-list"></ul>
+    <h2>Total: <span id="total">0</span></h2>
   </div>
   <script src="/js/diceroller.js"></script>
 </section>
@@ -32,6 +39,7 @@ page: home
         <p><strong>Species:</strong> <span id="species"></span></p>
         <p><strong>Gender:</strong> <span id="gender"></span></p>
         <p><strong>Class:</strong> <span id="clash"></span></p>
+        <p><strong>Job:</strong> <span id="job"></span></p>
         <p><strong>Size:</strong> <span id="size"></span></p>
         <p><strong>Background:</strong> <span id="background"></span></p>
         <p><strong>Motivation:</strong> <span id="motivation"></span></p>
@@ -43,11 +51,11 @@ page: home
   {% assign speciesArray = npcData.speciesOptions | split: ", " %}
   {% assign genderArray = npcData.genderOptions | split: ", " %}
   {% assign clashArray = npcData.clashOptions | split: ", " %}
+  {% assign jobArray = npcData.jobOptions | split: ", " %}
   {% assign sizeArray = npcData.sizeOptions | split: ", " %}
   {% assign backgroundArray = npcData.backgroundOptions | split: ", " %}
   {% assign motivationArray = npcData.motivationOptions | split: ", " %}
   {% assign flawArray = npcData.flawOptions | split: ", " %}
-
 
         const speciesOptions = [ 
           {% for species in speciesArray %}
@@ -63,7 +71,11 @@ page: home
             {% for clash in clashArray %}
               "{{ clash }}", 
             {% endfor %}
-
+          ];
+          const jobOptions = [
+            {% for job in jobArray %}
+              "{{ job }}", 
+            {% endfor %}
           ];
         const sizeOptions = [
             {% for size in sizeArray %}
@@ -90,12 +102,6 @@ page: home
 
           ];
 
-
-        const heightOptions = ["average", "tall", "short"];
-        const skintoneOptions = ["pale", "olive", "dark", "green", "blue", "red"];
-        const hairOptions = ["long", "short", "bald"];
-        const weaponOptions = ["sword", "bow and arrow", "bombs", "stick", "sai"];
-        
         function getRandomElement(array) {
             return array[Math.floor(Math.random() * array.length)];
         }
@@ -104,30 +110,20 @@ page: home
             const species = getRandomElement(speciesOptions);
             const gender = getRandomElement(genderOptions);
             const clash = getRandomElement(clashOptions);
+            const job = getRandomElement(jobOptions);
             const size = getRandomElement(sizeOptions);
             const background = getRandomElement(backgroundOptions);
             const motivation = getRandomElement(motivationOptions);
             const flaw = getRandomElement(flawOptions);
 
-
-            const height = getRandomElement(heightOptions);
-            const skintone = getRandomElement(skintoneOptions);
-            const hair = getRandomElement(hairOptions);
-            const weapon = getRandomElement(weaponOptions);
-
             document.getElementById("species").textContent = species;
             document.getElementById("gender").textContent = gender;
             document.getElementById("clash").textContent = clash;
+            document.getElementById("job").textContent = job;
             document.getElementById("size").textContent = size;
             document.getElementById("background").textContent = background;
             document.getElementById("motivation").textContent = motivation;
             document.getElementById("flaw").textContent = flaw;
-
-
-            document.getElementById("height").textContent = height;
-            document.getElementById("skintone").textContent = skintone;
-            document.getElementById("hair").textContent = hair;
-            document.getElementById("weapon").textContent = weapon;
         }
 
         document.getElementById('generateCharacter').addEventListener('click', generateRandomCharacter);
@@ -136,5 +132,8 @@ page: home
 
 </section>
 
+<section>
+   {% include looterGen.html %}
+</section>
 
 </body>

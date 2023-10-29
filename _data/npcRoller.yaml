@@ -1,0 +1,15 @@
+---
+
+speciesOptions: human, tortle, elf, grung, tiefling, halfling, orc, dragonborn, hamastran, aarokocra
+
+genderOptions: male, female, nonbinary, trans mtf, trans ftm, other
+
+clashOptions: barbarian, bard, cleric, druid, fighter, monk, paladin, ranger, rogue, sorcerer, warlock, wizard
+
+sizeOptions: average, tall, small
+
+backgroundOptions: poor, religious, fraud, criminal, rich, noble, entertainer, folk hero, artisan, hermit, outcast, sage, sailor, soldier, urchin, loving family, broken family, abusive family, pariah, zealout
+
+motivationOptions: happiness, money, freedom, peace, joy, balance, fulfillment, confidence, stability, passion
+
+flawOptions: judgmental, obsessive, selfish, envious, overly lustful, gluttonous, debt, greedy, cowardly, paranoid, covetous, pessimistic, optimistic, cynical, irrational, ignorant, foolish, naive, hedonistic, practical

@@ -1,0 +1,69 @@
+---
+version: 1
+author: Shayne Valencia
+title: Hamastral
+
+header1: <h3>Hamastran</h3>
+size: Small
+walking-speed: 50ft
+
+notable-quote: Please do not observe me dig this hole.<br> - Hamastran proverb
+
+description: 
+
+early-life: 
+
+beliefs: >
+  <h3>Relations with Other Races:</h3>
+  <p>Hamastrans are mostly hermits and are seldom encountered. As such, most races have neutral to positive relations with them, seeing them as mysterious and reclusive individuals.</p>
+  <h3>Natural Enemies:</h3> 
+  <p>Hamastrans have a natural aversion to snakes and yuan-ti due to their mystical beliefs and legends.</p>
+
+origins: 
+
+language: >
+  <h3>Languages:</h3>
+  <p>You can speak, read, and write Common and Hamastran.</p>
+
+
+names: >
+  <h3>Naming Convention:</h3> 
+  <p>Hamastran names can be either short and cute or long and mystical, reflecting their diverse personalities and backgrounds.</p>
+
+trait1: >
+  <h3>Subterranean Affinity:</h3> 
+  <p>Hamastrans are well-suited to burrowing and living underground. You have advantage on Dexterity (Stealth) checks made while underground and can move through difficult terrain caused by loose earth or sand without expending extra movement.</p>
+
+agility-score-increase: >
+  <h3>Ability Score Increase:</h3>
+  <p>Your agility and wisdom are enhanced due to your mystical and solitary nature. You gain a +2 bonus to Agility and a +2 bonus to Wisdom.</p>
+
+age: 
+
+alignment: >
+  <h3>Alignment:</h3> 
+  <p>Hamastrans tend to be chaotic neutral, driven by their mystical and spiritual pursuits, often shunning conventional rules and order.</p>
+
+size-detailed: >
+  <h3>Size:</h3>
+  <p>Hamastrans are short and stocky, standing about 3 to 4 feet tall. They are considered Small creatures.</p>
+
+walking-speed-long: >
+  <h3>Speed:</h3> 
+  <p>Your base walking speed is 50 feet, reflecting your agility and ability to move quickly.</p>
+
+melee-weaponry: 
+
+hold-breath: 
+
+swimming: 
+
+fun-fact1: >
+  <h3>Preferred Classes:</h3> 
+  <p>Hamastrans excel in the magical and mystical arts, often becoming Mages, Rangers, or similar spellcasting classes due to their spiritual nature and hermetic lifestyles.</p>
+
+ability: >
+  <h3>Mystical Cheeks:</h3> 
+  <p>Hamastrans have large, pouch-like cheeks that can hold an astonishing amount of items. You have an extra-dimensional pocket in each cheek that functions as a Bag of Holding, allowing you to store and retrieve items as if using the Bag of Holding spell. However, your cheeks can only store items, and not living creatures.</p>
+
+known-languages: 

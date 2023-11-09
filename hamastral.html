@@ -1,0 +1,54 @@
+---
+layout: default
+title: Hamastral
+page: hamastral
+
+---
+
+{% assign data = site.data.hamastral %}
+
+<body>
+   <div class="section">
+  <h1>
+    {{ data.header1 }}
+  </h1>
+  <table class="folk">
+    <tr>
+      <th>Version<br>&nbsp;</th>
+      <td>{{ data.version }}</td>
+    </tr>
+    <tr>
+      <th>Size<br>&nbsp;</th>
+      <td>{{ data.size }}</td>
+    </tr>
+    <tr>
+      <th>Walking<br>Speed</th>
+      <td>{{ data.walking-speed }}</td>
+    </tr>
+    <tr>
+      <th>Swimming<br>Speed</th>
+      <td>{{ data.swimming-speed }}</td>
+    </tr>
+  </table>
+ 
+    <div>
+      {{ data.notable-quote }}
+    </div>
+    <br>
+    {{ data.description }}
+    <br>
+    {{ data.early-life }}
+    {{ data.beliefs }}
+    {{ data.origins }}
+    <p>
+      {{data.language}}
+    </p>
+    {{ data.names }}
+    {{ data.trait1 }}
+    {{ data.trait2 }}
+    {{ agility-score-increase }}
+    TEST
+    {{ data.age }}
+
+  </div>
+</body>
